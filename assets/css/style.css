@@ -1,0 +1,592 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    transition: .4s;
+}
+
+@font-face {
+    font-family: 'GothicA1';
+    src: url(../fonts/GothicA1-SemiBold.ttf);
+    font-weight:600;
+}
+
+@font-face {
+    font-family: 'GothicA1';
+    src: url(../fonts/GothicA1-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'AlfaSlabOne';
+    src: url(../fonts/AlfaSlabOne-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'GoudyBookletter1911';
+    src: url(../fonts/GoudyBookletter1911-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Gothic-Heavy';
+    src: url(../fonts/ofont.ru_Franklin\ Gothic\ Heavy.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Gothic-Medium';
+    src: url(../fonts/ofont.ru_Franklin\ Gothic\ Medium.ttf);
+    font-weight: 400;
+}
+
+body {
+    background: #ECEAEC;
+    position: relative;
+}
+
+.section {
+    max-width: 1276px;
+    margin: 0 auto;
+}
+
+.section-1200 {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 36px 0;
+    background: #EFF0F2;
+}
+/* end header */
+
+/* title */
+.title {
+    background: #212121;
+    padding-top: 35px;
+    padding-bottom: 22px;
+}
+
+.title-content h2 {
+    font-size: 48px;
+    font-family: 'AlfaSlabOne';
+    color: #FFFFFF;
+    text-align: left;
+    font-weight: 400;
+}
+/* end title */
+
+/* add-btn */
+.add-btn {
+    position: fixed;
+    top: 362px;
+    right: 85px;
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    background: #212121;
+    border: 1px solid #FF0000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FBEEFD;
+    font-size: 24px;
+    font-family: 'Gothic-Heavy';
+    transform: rotate(-15deg);
+    box-shadow: 8px -11px 26px 5px rgba(173, 0, 255, 0.25);
+    z-index: 10;
+}
+
+.add-btn:hover {
+    transform: scale(1.08);
+}
+/* end add-btn */
+
+/* news */
+.news {
+    padding-top: 17px;
+}
+
+.news-content {
+    background: #EFF0F2;
+    padding-top: 52px;
+    padding-bottom: 55px;
+}
+
+.news-items {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 40px 74px;
+}
+
+.news-items::after {
+    content: "";
+    width: 1198px;
+    height: 1px;
+    background: #212121;
+    display: block;
+    margin: 0 auto;
+}
+
+.news-item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.news-img {
+    width: 349px;
+    height: 225px;
+    margin-bottom: 19px;
+}
+
+.news-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-img img:hover {
+    transform: scale(1.08);
+}
+
+.news-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.news-text h3 {
+    width: 349px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Gothic-Heavy';
+    padding-bottom: 15px;
+}
+
+.news-text p {
+    width: 349px;
+    font-size: 16px;
+    color: #3D3939;
+    font-family: 'GothicA1';
+    font-weight: 600;
+    padding-bottom: 2px;
+}
+
+.orange-block {
+    width: 60px;
+    height: 11px;
+    background: #E7A84A;
+    margin-top: 10px;
+}
+
+.news-text .news-date {
+    font-family: 'GothicA1';
+    font-weight: 800;
+    padding-top: 15px;
+    color: #575050;
+}
+
+.news-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 110px;
+    padding-top: 39px;
+    padding-bottom: 55px;
+}
+
+.news-nav p {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Gothic-Heavy';
+}
+
+/* end news */
+
+/* sub */
+.sub {
+    display: flex;
+    justify-content: end;
+    padding-right: 32px;
+}
+
+.sub-block {
+    background-color: #212121;
+    padding: 38px 64px;
+}
+
+.sub-block h2 {
+    width: 698px;
+    font-family: 'Gothic-Heavy';
+    font-weight: 400;
+    font-size: 32px;
+    color: #EFF0F2;
+    padding-bottom: 60px;
+}
+
+.sub-form {
+    display: flex;
+    align-items: end;
+    gap: 30px;
+}
+
+.sub-form input {
+    border: none;
+    border-bottom: 2px solid #EFF0F2;
+    background: transparent;
+    width: 533px;
+    padding-bottom: 9px;
+    outline: none;
+    font-size: 24px;
+    color: #EFF0F2;
+    font-family: 'Gothic-Medium';
+}
+
+.sub-form input::placeholder {
+    color: #EFF0F2;
+    font-family: 'Gothic-Medium';
+    font-size: 24px;
+}
+
+.sub-form .btn {
+    background: #EFF0F2;
+    border: 2px solid #EFF0F2;
+    padding: 8px 19px;
+    width: 135px;
+    font-size: 24px;
+    font-family: 'Gothic-Heavy';
+    color: #212121;
+}
+
+.sub-form .btn:hover {
+    background: transparent;
+    color: #EFF0F2;
+}
+
+/* end sub */
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px 0;
+    background-color: #212121;
+}
+
+footer p {
+    font-family: 'Gothic-Heavy';
+    font-size: 20px;
+    color: #FFFFFF;
+}
+/* end footer */
+
+/* add */
+.add {
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 43px 0;
+    display: none;
+    width: 100%;
+}
+
+.add-content {
+    position: relative;
+}
+
+.add.active {
+    display: flex;
+}
+
+.add-close .add-btn {
+    position: absolute;
+    top: 2px;
+    right: -110px;
+}
+
+.add h2 {
+    font-size: 48px;
+    font-family: 'Gothic-Heavy';
+    font-style: italic;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.add-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 50px;
+}
+
+.add-input {
+    display: flex;
+    align-items: end;
+    gap: 40px;
+}
+
+.add-input label {
+    font-family: 'Gothic-Medium';
+    font-style: italic;
+    font-size: 36px;
+}
+
+.add-input input {
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    font-size: 26px;
+}
+
+.add-input .input-headline {
+    width: 1425px;
+}
+
+.add-textarea {
+    align-items: start;
+}
+
+.add-input textarea {
+    border: 1px solid black;
+    background: transparent;
+    width: 1305px;
+    height: 131px;
+    outline: none;
+    font-size: 26px;
+}
+
+.add-input .file-input {
+    border-bottom: 1px solid #D9D9D9;
+    font-size: 20px;
+}
+
+.add-form-block {
+    display: flex;
+    align-items: end;
+    gap: 115px;
+}
+
+.add-form-block input {
+    width: 255px;
+}
+
+.add-full-texarea {
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+
+.add-full-texarea .full-textarea {
+    height: 190px;
+    width: 1691px;
+}
+
+.add-form-btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.add-form-btn input {
+    border: 1px solid black;
+    padding: 13px 71px;
+    border-radius: 10px;
+    background: transparent;
+    font-family: 'Gothic-Medium';
+    font-style: italic;
+    font-size: 36px;
+}
+
+.add-form-btn input:hover {
+    color: #D9D9D9;
+    background: #212121;
+}
+
+.error {
+    font-size: 24px;
+    padding: 15px 0;
+}
+
+/* end add */
+
+/* banner */
+.banner {
+    background-color: #212121;
+    padding: 35px 0;
+}
+
+.banner-content h2 {
+    font-size: 64px;
+    font-family: 'Gothic-Heavy';
+    color: #FFFFFF;
+    text-align: left;
+    padding-bottom: 40px;
+}
+
+.banner-content p {
+    font-size: 32px;
+    font-family: 'Gothic-Medium';
+    color: #FFFFFF;
+}
+/* end banner */
+
+/* card */
+.card {
+    background-color: #EFF0F2;
+}
+
+.card-content::after {
+    content: "";
+    height: 1px;
+    background-color: #212121;
+    display: block;
+    width: 100%;
+}
+
+.card-img {
+    width: 1200px;
+    height: 675px;
+    padding-bottom: 60px;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    padding-bottom: 40px;
+}
+
+.card-title p {
+    font-family: 'GothicA1';
+    font-size: 24px;
+    color: #575050;
+    font-weight: 300;
+}
+
+.card-words {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-words p {
+    color: #212121;
+}
+
+.card-text {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.card-text p {
+    font-family: 'GoudyBookletter1911';
+    font-size: 24px;
+    width: 986px;
+    line-height: 1.5;
+}
+
+.card-track {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.track-block {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.track-block {
+    position: relative;
+    width: 306px;
+    height: 370px;
+    background-color: #008945;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.track-icon img {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    width: 23px;
+    height: 23px;
+}
+
+.track-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.track-img img {
+    width: 194px;
+    height: 195px;
+    object-fit: cover;
+}
+
+.track-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+.track-text h3 {
+    font-family: 'Gothic-Medium';
+    font-size: 28px;
+    color: #EFF0F2;
+    font-weight: 400;
+}
+
+.track-text p {
+    font-family: 'Gothic-Medium';
+    font-size: 22px;
+    color: #5abb8a;
+    font-weight: 400;
+}
+
+.track-play {
+    display: flex;
+    align-items: end;
+    gap: 15px;
+    margin-top: -10px;
+}
+
+.card .sub {
+    padding: 50px 0;
+}
+/* end card */
+
+
+
